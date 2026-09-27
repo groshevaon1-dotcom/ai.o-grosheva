@@ -6,6 +6,9 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
+/* Липкая шапка ~77px: не даём заголовкам секций уезжать под неё при переходе по якорям */
+:target, main > section[id], #top { scroll-margin-top: 90px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 body {
   margin: 0;
   background: var(--color-bg-primary);
