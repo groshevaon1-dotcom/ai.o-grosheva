@@ -400,7 +400,7 @@ main > aside.accent:nth-of-type(even) { background: var(--color-night); }
   .nav { flex-direction: row; flex: 1; justify-content: center; gap: var(--space-md); font-size: var(--fs-body-sm); }
   .nav a { padding: 0; border-bottom: 0; }
   .nav__cta { margin-top: 0; }
-  .skills__grid { grid-template-columns: repeat(2, 1fr); }
+  .skills__grid { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
   .cases__grid { grid-template-columns: repeat(2, 1fr); align-items: stretch; }
   .cases__grid .case { display: flex; flex-direction: column; }
   .case__title { min-height: 2.3em; }
