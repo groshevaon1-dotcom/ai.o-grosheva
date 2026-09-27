@@ -154,7 +154,9 @@ section > h2 { font-size: var(--fs-h2); margin-bottom: .7em; }
 .faq { position: relative; background: var(--color-bg-secondary); box-shadow: 0 0 0 100vw var(--color-bg-secondary); clip-path: inset(0 -100vw); }
 .about { position: relative; background: var(--color-accent-soft); box-shadow: 0 0 0 100vw var(--color-accent-soft); clip-path: inset(0 -100vw); }
 /* «Что умею»: карточки на светлой поверхности, выделен только флагман */
-.skills__grid .skill-card--flag { background: var(--color-accent-soft); }
+/* «Что умею»: тёплый+холодный земляной ритм Terra Nova (не только бело-зелёное) */
+.skills__grid .skill-card:nth-child(odd)  { background: var(--color-accent-soft); }
+.skills__grid .skill-card:nth-child(even) { background: var(--color-warning-soft); }
 .skill-card__ic svg { width: 24px; height: 24px; }
 .skill-card__flag {
   position: absolute; top: var(--space-lg); right: var(--space-lg);
