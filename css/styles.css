@@ -148,8 +148,14 @@ section > h2 { font-size: var(--fs-h2); margin-bottom: .7em; }
 .skills__grid .skill-card:nth-child(3) .skill-card__ic { background: var(--color-warning-soft); color: var(--color-warning); }
 .skills__grid .skill-card:nth-child(4) .skill-card__ic { background: var(--color-success-soft); color: var(--color-success); }
 
-/* полноширинные светлые полосы для ритма (Что умею, FAQ) */
-.skills, .faq { position: relative; background: var(--color-bg-secondary); box-shadow: 0 0 0 100vw var(--color-bg-secondary); clip-path: inset(0 -100vw); }
+/* полноширинные цветные полосы для ритма */
+.faq { position: relative; background: var(--color-bg-secondary); box-shadow: 0 0 0 100vw var(--color-bg-secondary); clip-path: inset(0 -100vw); }
+.about { position: relative; background: var(--color-accent-soft); box-shadow: 0 0 0 100vw var(--color-accent-soft); clip-path: inset(0 -100vw); }
+/* тонированные карточки «Что умею» */
+.skills__grid .skill-card:nth-child(1) { background: var(--color-accent-soft); }
+.skills__grid .skill-card:nth-child(2) { background: #E7F0EA; }
+.skills__grid .skill-card:nth-child(3) { background: var(--color-warning-soft); }
+.skills__grid .skill-card:nth-child(4) { background: var(--color-success-soft); }
 .skill-card__ic svg { width: 24px; height: 24px; }
 .skill-card__flag {
   position: absolute; top: var(--space-lg); right: var(--space-lg);
