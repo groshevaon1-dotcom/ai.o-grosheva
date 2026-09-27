@@ -8,6 +8,13 @@ const LINKS = {
   miniapp:  "https://t.me/Drop_chaos_bot",   // «Организатор Хаоса» — открывается ботом
 };
 
+// Логотип — всегда плавно наверх (липкая шапка мешает обычному якорю #top)
+const logo = document.querySelector(".logo");
+if (logo) logo.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
 document.querySelectorAll("[data-link]").forEach((el) => {
   const key = el.getAttribute("data-link");
   const url = LINKS[key];
