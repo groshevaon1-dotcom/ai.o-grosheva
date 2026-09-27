@@ -277,7 +277,7 @@ section > h2 { font-size: var(--fs-h2); margin-bottom: .7em; }
   padding: 16px 18px;
 }
 .agent__head { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
-.agent__ava { width: 54px; height: 54px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 1px solid var(--color-line); }
+.agent__ava { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 1px solid var(--color-line); }
 .agent h4 { font-family: var(--font-display); font-size: 1.15rem; margin: 0 0 2px; }
 .agent__meta { font-size: var(--fs-caption); color: var(--color-accent); font-weight: 600; margin: 0; }
 .agent p:last-child { margin: 0; color: var(--color-text-secondary); font-size: var(--fs-body-sm); }
