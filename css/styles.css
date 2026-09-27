@@ -89,6 +89,8 @@ section > h2 { font-size: var(--fs-h2); margin-bottom: .7em; }
 .hero__grid { display: grid; grid-template-columns: 1fr; gap: var(--space-2xl); align-items: center; }
 .hero__eyebrow { color: var(--color-accent); letter-spacing: .04em; font-size: var(--fs-eyebrow); text-transform: uppercase; margin-bottom: .8em; }
 .hero__title { font-size: clamp(2.2rem, 4vw, 3.75rem); letter-spacing: var(--ls-display); line-height: 1.04; margin: 0 0 .5em; }
+.hero__value { font-family: var(--font-display); font-weight: 600; font-size: var(--fs-h4); color: var(--color-text-primary); margin: 0 0 .6em; }
+.hero__flow { color: var(--color-accent); font-weight: 600; font-size: var(--fs-body); margin: 0 0 1.8em; }
 .hero__title .acc { color: var(--color-accent); }
 .hero__subtitle { color: var(--color-text-secondary); font-size: var(--fs-lead); max-width: 48ch; margin: 0 0 1.6em; }
 .hero__actions { display: flex; flex-wrap: wrap; gap: var(--space-sm); }
@@ -287,11 +289,15 @@ section > h2 { font-size: var(--fs-h2); margin-bottom: .7em; }
 .integrations {
   margin-top: var(--space-2xl); scroll-margin-top: 88px;
   background: var(--color-surface); border: 1px solid var(--color-line);
-  border-radius: var(--radius-lg); padding: clamp(24px, 3vw, 40px);
-  box-shadow: var(--shadow-subtle); text-align: center;
+  border-top: 3px solid var(--color-accent);
+  border-radius: var(--radius-lg); padding: clamp(28px, 4vw, 52px);
+  box-shadow: var(--shadow-subtle);
 }
 .integrations .eyebrow { color: var(--color-accent); }
-.integrations__grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: var(--space-md); }
+.integrations__title { font-size: var(--fs-h3); margin: .1em 0 .35em; }
+.integrations__lead { color: var(--color-text-secondary); font-size: var(--fs-body-lg); max-width: 62ch; margin: 0 0 var(--space-lg); }
+.integrations__grid { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 0; }
+.integrations__note { margin: var(--space-lg) 0 0; color: var(--color-text-secondary); font-size: var(--fs-body-sm); }
 /* --- Навигация по проектам (чипы) --- */
 .cases__nav { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: var(--space-xl); }
 .cases__nav a {
