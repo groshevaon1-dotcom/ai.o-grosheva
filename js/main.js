@@ -8,6 +8,22 @@ const LINKS = {
   miniapp:  "https://t.me/Drop_chaos_bot",   // «Организатор Хаоса» — открывается ботом
 };
 
+// Бургер-меню (мобильное)
+const header = document.querySelector(".site-header");
+const burger = document.querySelector(".nav-burger");
+if (burger && header) {
+  burger.addEventListener("click", () => {
+    const open = header.classList.toggle("is-open");
+    burger.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  header.querySelectorAll(".nav a, .nav-drawer .nav__cta").forEach((a) =>
+    a.addEventListener("click", () => {
+      header.classList.remove("is-open");
+      burger.setAttribute("aria-expanded", "false");
+    })
+  );
+}
+
 // Логотип — всегда плавно наверх (липкая шапка мешает обычному якорю #top)
 const logo = document.querySelector(".logo");
 if (logo) logo.addEventListener("click", (e) => {

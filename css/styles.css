@@ -62,9 +62,24 @@ section > h2 { font-size: var(--fs-h2); margin-bottom: .7em; }
 }
 .logo { display: flex; align-items: center; }
 .logo img { height: 30px; width: auto; }
-.nav { display: none; gap: var(--space-md); margin-left: auto; margin-right: auto; color: var(--color-text-secondary); font-size: var(--fs-body-sm); }
+/* бургер-меню (мобильное) */
+.nav-burger {
+  display: inline-flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 5px; width: 44px; height: 44px; margin-left: auto; padding: 0;
+  background: none; border: 1px solid var(--color-line); border-radius: var(--radius-button); cursor: pointer;
+}
+.nav-burger span { display: block; width: 20px; height: 2px; background: var(--color-text-primary); border-radius: 2px; }
+.nav-drawer { display: none; }
+.site-header.is-open .nav-drawer {
+  display: flex; flex-direction: column; gap: 0;
+  position: absolute; top: 100%; left: 0; right: 0;
+  background: var(--color-bg-primary); border-bottom: 1px solid var(--color-line);
+  box-shadow: var(--shadow-soft); padding: 10px var(--gutter) 20px;
+}
+.nav { display: flex; flex-direction: column; gap: 0; color: var(--color-text-secondary); font-size: var(--fs-body); }
+.nav a { padding: 13px 4px; border-bottom: 1px solid var(--color-line); }
 .nav a:hover { color: var(--color-accent); }
-.nav__cta { margin-left: auto; padding: 10px 18px; font-size: var(--fs-body-sm); }
+.nav__cta { margin-top: 14px; text-align: center; padding: 12px 18px; font-size: var(--fs-body); }
 
 /* --- Hero (обложка) --- */
 .hero { overflow: hidden; padding-top: var(--space-2xl); padding-bottom: var(--space-3xl); }
@@ -263,6 +278,27 @@ section > h2 { font-size: var(--fs-h2); margin-bottom: .7em; }
 .case__list li { color: var(--color-text-secondary); }
 .case__aside { margin-top: 16px; }
 .case__aside img { width: 100%; max-width: 320px; border-radius: var(--radius-md); border: 1px solid var(--color-line); display: block; }
+
+/* ===== цветовая игра по сайту (палитра Terra Nova) ===== */
+/* факты — разноцветные цифры */
+.stat:nth-child(2) b { color: var(--color-forest); }
+.stat:nth-child(3) b { color: var(--color-success); }
+.stat:nth-child(4) b { color: var(--color-warning); }
+/* «Что умею» — цветные полоски сверху карточек (в тон иконкам) */
+.skills__grid .skill-card { border-top: 3px solid var(--color-accent); }
+.skills__grid .skill-card:nth-child(2) { border-top-color: var(--color-forest); }
+.skills__grid .skill-card:nth-child(3) { border-top-color: var(--color-warning); }
+.skills__grid .skill-card:nth-child(4) { border-top-color: var(--color-success); }
+/* Кейсы — цветные полоски сверху, чередование по палитре */
+.cases__grid > .case { border-top: 3px solid var(--color-accent); }
+.cases__grid > .case:nth-child(2) { border-top-color: var(--color-forest); }
+.cases__grid > .case:nth-child(3) { border-top-color: var(--color-success); }
+.cases__grid > .case:nth-child(4) { border-top-color: var(--color-warning); }
+.cases__grid > .case:nth-child(5) { border-top-color: var(--color-sage); }
+.cases__grid > .case:nth-child(6) { border-top-color: var(--color-forest); }
+.cases__grid > .case:nth-child(7) { border-top-color: var(--color-accent); }
+/* слоган-полосы — чередуем лес / ночь */
+main > aside.accent:nth-of-type(even) { background: var(--color-night); }
 .case__shot {
   margin-top: 16px; border: 1px dashed var(--color-line-strong); border-radius: var(--radius-md);
   min-height: 120px; display: flex; align-items: center; justify-content: center;
@@ -336,8 +372,11 @@ section > h2 { font-size: var(--fs-h2); margin-bottom: .7em; }
 
 /* --- Планшет/десктоп --- */
 @media (min-width: 768px) {
-  .nav { display: flex; }
-  .nav__cta { margin-left: 0; }
+  .nav-burger { display: none; }
+  .nav-drawer { display: flex; flex: 1; align-items: center; gap: var(--space-lg); }
+  .nav { flex-direction: row; flex: 1; justify-content: center; gap: var(--space-md); font-size: var(--fs-body-sm); }
+  .nav a { padding: 0; border-bottom: 0; }
+  .nav__cta { margin-top: 0; }
   .skills__grid { grid-template-columns: repeat(2, 1fr); }
   .cases__grid { grid-template-columns: repeat(2, 1fr); align-items: stretch; }
   .cases__grid .case { display: flex; flex-direction: column; }
