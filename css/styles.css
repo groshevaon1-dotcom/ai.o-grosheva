@@ -311,21 +311,28 @@ section > h2 { font-size: var(--fs-h2); margin-bottom: .7em; }
 .about__text p { color: var(--color-text-secondary); font-size: var(--fs-body-lg); margin-bottom: 1em; }
 .about__text strong { color: var(--color-text-primary); }
 
-/* --- Как работаю: бирюзовая панель + шаги (насыщенно, читаемо) --- */
-.process {
-  background: var(--color-accent); color: var(--color-on-dark);
-  border-radius: var(--radius-lg);
-  margin-top: var(--space-2xl); margin-bottom: var(--space-2xl);
-}
-.process .eyebrow--mint { color: var(--color-mint); }
-.process h2 { color: var(--color-on-dark); font-size: var(--fs-h2); }
+/* --- Как работаю: заголовок + отдельные карточки-шаги --- */
+.process { margin-top: var(--space-2xl); margin-bottom: var(--space-2xl); }
+.process .eyebrow--mint { color: var(--color-accent); }
+.process h2 { color: var(--color-text-primary); font-size: var(--fs-h2); }
 .process__head { max-width: 640px; margin-bottom: var(--space-xl); }
-.process__slogan { color: var(--color-mint); font-family: var(--font-display); font-size: var(--fs-h4); margin-top: .6em; }
+.process__slogan { color: var(--color-accent); font-family: var(--font-display); font-size: var(--fs-h4); margin-top: .6em; }
 .steps { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--space-md); grid-template-columns: 1fr; }
-.steps li { border-top: 1px solid rgba(255, 255, 255, .22); padding-top: 16px; }
-.steps b { font-family: var(--font-display); font-size: 1.6rem; color: var(--color-mint); }
-.steps h3 { color: var(--color-on-dark); font-size: var(--fs-h4); margin: 6px 0 4px; }
-.steps p { color: var(--color-on-dark); font-size: var(--fs-body-lg); line-height: 1.55; margin: 0; }
+.steps li {
+  background: var(--color-surface); border: 1px solid var(--color-line);
+  border-top: 3px solid var(--color-accent);
+  border-radius: var(--radius-lg); padding: var(--space-lg);
+  box-shadow: var(--shadow-subtle);
+}
+.steps li:nth-child(2) { border-top-color: var(--color-forest); }
+.steps li:nth-child(3) { border-top-color: var(--color-success); }
+.steps li:nth-child(4) { border-top-color: var(--color-warning); }
+.steps b { font-family: var(--font-display); font-size: 1.7rem; color: var(--color-accent); }
+.steps li:nth-child(2) b { color: var(--color-forest); }
+.steps li:nth-child(3) b { color: var(--color-success); }
+.steps li:nth-child(4) b { color: var(--color-warning); }
+.steps h3 { color: var(--color-text-primary); font-size: var(--fs-h4); margin: 8px 0 4px; }
+.steps p { color: var(--color-text-secondary); font-size: var(--fs-body); line-height: 1.55; margin: 0; }
 
 /* --- Планшет/десктоп --- */
 @media (min-width: 768px) {
