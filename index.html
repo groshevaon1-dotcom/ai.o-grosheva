@@ -21,8 +21,8 @@
   <meta name="twitter:title" content="Grosheva AI Lab — автоматизация бизнеса на ИИ">
   <meta name="twitter:description" content="Бизнес-аналитик и архитектор. Код пишет ИИ. Агенты, боты, мини-аппы и сайты под ключ.">
   <meta name="twitter:image" content="https://ai.o-grosheva.ru/assets/img/og.png">
-  <link rel="stylesheet" href="css/tokens.css?v=10">
-  <link rel="stylesheet" href="css/styles.css?v=10">
+  <link rel="stylesheet" href="css/tokens.css?v=12">
+  <link rel="stylesheet" href="css/styles.css?v=12">
 </head>
 <body>
   <!-- 0. ХЕДЕР -->
@@ -119,22 +119,18 @@
       <div class="skills__grid">
         <article class="skill-card skill-card--flag">
           <span class="skill-card__flag">Флагман</span>
-          <span class="skill-card__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 5 13h6l-1 9 9-11h-6l1-9z"/></svg></span>
           <h3>Автоматизация на ИИ под ключ</h3>
           <p>Аудит процессов → ИИ-агенты, боты и воронки, интеграции, работа с БД, развёртывание и поддержка.</p>
         </article>
         <article class="skill-card">
-          <span class="skill-card__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7.5" height="7.5" rx="1.6"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="1.6"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="1.6"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.6"/></svg></span>
           <h3>Продукты</h3>
           <p>Мини-приложения в Telegram, сайты, CRM-платформы.</p>
         </article>
         <article class="skill-card">
-          <span class="skill-card__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="10" r="1.8"/><path d="M4 18l5-5 4 4 3-2.5L21 19"/></svg></span>
           <h3>Контент и дизайн</h3>
           <p>ИИ-изображения, дизайн-системы, контент-завод, скиллы для ИИ.</p>
         </article>
         <article class="skill-card">
-          <span class="skill-card__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-4 4V5z"/><path d="M8.5 10h7M8.5 13h4"/></svg></span>
           <h3>С чего начать</h3>
           <p>Консультация по возможностям автоматизации и аудит процессов — вход без обязательств.</p>
         </article>
@@ -149,9 +145,18 @@
       <p class="eyebrow">Проекты</p>
       <h2>Кейсы</h2>
       <p class="cases__lead">Всё, что показано ниже, я собрала сама — на ИИ, под реальные задачи.</p>
+      <nav class="cases__nav" aria-label="Быстрый переход к проектам">
+        <a href="#case-agents">Команда ИИ-агентов</a>
+        <a href="#case-organizer">Организатор Хаоса</a>
+        <a href="#case-terranova">Terra Nova</a>
+        <a href="#case-quiz">Квиз «Участковый»</a>
+        <a href="#case-automations">Автоматизации</a>
+        <a href="#case-crm">Приём заявок + CRM</a>
+        <a href="#case-design">Дизайн-система</a>
+      </nav>
       <div class="cases__grid">
 
-        <article class="case case--flag">
+        <article class="case case--flag" id="case-agents">
           <span class="case__tag">Флагман</span>
           <h3 class="case__title">Команда ИИ-агентов на своём сервере</h3>
           <p class="case__tagline">Не один бот — семья агентов с единым центром управления.</p>
@@ -193,14 +198,14 @@
             <article class="agent agent--5">
               <div class="agent__head">
                 <img class="agent__ava" src="assets/img/visual-5.webp" alt="" loading="lazy">
-                <div><h4>DROPCHAOS</h4><p class="agent__meta">хостинг</p></div>
+                <div><h4>Drop_chaos</h4><p class="agent__meta">хостинг</p></div>
               </div>
               <p>Держит Telegram Mini App «Организатор Хаоса» — приём, хранение и выдача мини-аппа.</p>
             </article>
           </div>
         </article>
 
-        <article class="case case--wide">
+        <article class="case case--wide" id="case-organizer">
           <h3 class="case__title">«Организатор Хаоса» — Telegram Mini App</h3>
           <p class="case__tagline">Поймать мысль сейчас — разобрать потом. Разгрузка головы прямо в Telegram.</p>
           <div class="case__block"><span>Задача</span><p>Мысли, идеи и задачи роятся в голове и теряются в заметках и чатах «с собой», а списки дел превращаются в свалку.</p></div>
@@ -216,25 +221,29 @@
           </div>
         </article>
 
-        <article class="case">
-          <h3 class="case__title">Terra Nova — земля под ключ</h3>
-          <p class="case__tagline">Сайт + ИИ-ассистент + аналитика рынка.</p>
-          <div class="case__block"><span>Задача</span><p>Разрозненные данные по земле, ручная подготовка материалов и сделок.</p></div>
-          <div class="case__block"><span>Что сделала</span>
-            <ul class="case__list">
-              <li>Живой лендинг с автодеплоем и юридическими страницами</li>
-              <li>ИИ-ассистент по земле</li>
-              <li>Авто-сводки по рынку</li>
-              <li>CRM сделок и база знаний, по которой отвечает ассистент</li>
-            </ul>
+        <article class="case case--wide case--split" id="case-terranova">
+          <div class="case__body">
+            <h3 class="case__title">Terra Nova — земля под ключ</h3>
+            <p class="case__tagline">Сайт + ИИ-ассистент + аналитика рынка.</p>
+            <div class="case__block"><span>Задача</span><p>Разрозненные данные по земле, ручная подготовка материалов и сделок.</p></div>
+            <div class="case__block"><span>Что сделала</span>
+              <ul class="case__list">
+                <li>Живой лендинг с автодеплоем и юридическими страницами</li>
+                <li>ИИ-ассистент по земле</li>
+                <li>Авто-сводки по рынку</li>
+                <li>CRM сделок и база знаний, по которой отвечает ассистент</li>
+              </ul>
+            </div>
+            <ul class="case__stack"><li>сайт (автодеплой)</li><li>ИИ-ассистент</li><li>Notion CRM</li><li>база знаний</li></ul>
+            <p class="case__result">Живой бренд-лендинг — можно открыть прямо сейчас.</p>
+            <a class="case__demo" href="https://terranov.ru" target="_blank" rel="noopener">Открыть сайт →</a>
           </div>
-          <ul class="case__stack"><li>сайт (автодеплой)</li><li>ИИ-ассистент</li><li>Notion CRM</li><li>база знаний</li></ul>
-          <p class="case__result">Живой бренд-лендинг — можно открыть прямо сейчас.</p>
-          <a class="case__demo" href="https://terranov.ru" target="_blank" rel="noopener">Открыть сайт →</a>
-          <div class="case__media"><img src="assets/img/terranova-site.png" alt="Сайт Terra Nova — земельный капитал" loading="lazy"></div>
+          <div class="case__aside">
+            <img src="assets/img/terranova-site.png" alt="Сайт Terra Nova — земельный капитал" loading="lazy">
+          </div>
         </article>
 
-        <article class="case case--wide case--split">
+        <article class="case case--wide case--split" id="case-quiz">
           <div class="case__body">
             <h3 class="case__title">Квиз-воронка «Участковый. Земельный детектив»</h3>
             <p class="case__tagline">Страх земли → азарт. За 5 минут — от «сложно и страшно» до заявки.</p>
@@ -250,7 +259,7 @@
           </div>
         </article>
 
-        <article class="case">
+        <article class="case" id="case-automations">
           <h3 class="case__title">Автоматизации по расписанию</h3>
           <p class="case__tagline">Карточки, сводки и напоминания приходят сами.</p>
           <div class="case__block"><span>Задача</span><p>Рутинные отчёты, карточки и напоминания делались вручную.</p></div>
@@ -267,7 +276,7 @@
           <p class="case__result">Рутина идёт сама, по расписанию, без ручного участия.</p>
         </article>
 
-        <article class="case">
+        <article class="case" id="case-crm">
           <h3 class="case__title">Приём заявок + мини-CRM</h3>
           <p class="case__tagline">Заявка с сайта — сразу в работу, ничего не теряется.</p>
           <div class="case__block"><span>Задача</span><p>Заявки с сайта теряются, нет единого места и порядка по закону.</p></div>
@@ -278,7 +287,7 @@
           <div class="case__media"><img src="assets/img/requests.png" alt="Заявки с сайта приходят в Telegram" loading="lazy"></div>
         </article>
 
-        <article class="case case--wide">
+        <article class="case case--wide" id="case-design">
           <h3 class="case__title">Дизайн-система и сайты — целиком моё</h3>
           <p class="case__tagline">Один визуальный язык — для сайта, ботов и контента. И готовые сайты без дизайнера и верстальщика в штате.</p>
           <div class="case__block"><span>Задача</span><p>Визуал живёт вразнобой, а сайт обычно собирают вдвоём — дизайнер и верстальщик, и каждый тянет свой срок.</p></div>
@@ -390,10 +399,45 @@
 
   <!-- 7. ФУТЕР -->
   <footer class="site-footer">
-    <span>Grosheva AI Lab · Ольга Грошева</span>
-    <span>© 2026</span>
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="#top" class="footer__logo">
+          <img src="assets/img/mark-dark-256.png" alt="">
+          <span><b>Grosheva</b> AI&nbsp;Lab</span>
+        </a>
+        <p>Бизнес-аналитик и архитектор. Считаю выгоду, проектирую решение — код пишет ИИ. Автоматизация бизнеса под ключ.</p>
+      </div>
+      <nav class="footer__col" aria-label="Что умею">
+        <p class="footer__h">Что умею</p>
+        <a href="#skills">Автоматизация на ИИ</a>
+        <a href="#skills">Боты и воронки</a>
+        <a href="#skills">Мини-приложения и сайты</a>
+        <a href="#skills">Дизайн-системы</a>
+      </nav>
+      <nav class="footer__col" aria-label="Проекты">
+        <p class="footer__h">Проекты</p>
+        <a href="#case-agents">Команда ИИ-агентов</a>
+        <a href="#case-organizer">Организатор Хаоса</a>
+        <a href="#case-terranova">Terra Nova</a>
+        <a href="#case-quiz">Квиз «Участковый»</a>
+        <a href="#case-crm">Приём заявок + CRM</a>
+      </nav>
+      <nav class="footer__col" aria-label="Связь">
+        <p class="footer__h">Связь</p>
+        <a href="#" data-link="telegram">Telegram</a>
+        <a href="#" data-link="max">MAX</a>
+        <a href="#" data-link="channel">Канал «Продуктовый хакер»</a>
+      </nav>
+    </div>
+    <div class="footer__legal">
+      <p class="footer__req">ИП Грошева Ольга Николаевна · ИНН 371501385780 · ОГРНИП 326784700130136</p>
+      <p class="footer__privacy">Сайт статический: форм нет, персональные данные не собираются и не хранятся, cookies и трекеры не используются.</p>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Grosheva AI Lab · Ольга Грошева</span>
+    </div>
   </footer>
 
-  <script src="js/main.js?v=10"></script>
+  <script src="js/main.js?v=12"></script>
 </body>
 </html>
