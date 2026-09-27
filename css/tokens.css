@@ -1,0 +1,64 @@
+/* Grosheva AI Lab — дизайн-токены 1.3 */
+/* Шрифты: положите файлы из папки 04_Шрифты рядом или поправьте пути */
+@font-face{font-family:"Literata";font-weight:600;font-display:swap;src:url(../assets/fonts/literata-cyrillic-600-normal.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:"Literata";font-weight:600;font-display:swap;src:url(../assets/fonts/literata-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Onest";font-weight:400;font-display:swap;src:url(../assets/fonts/onest-cyrillic-400-normal.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:"Onest";font-weight:400;font-display:swap;src:url(../assets/fonts/onest-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Onest";font-weight:600;font-display:swap;src:url(../assets/fonts/onest-cyrillic-600-normal.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:"Onest";font-weight:600;font-display:swap;src:url(../assets/fonts/onest-latin-600-normal.woff2) format("woff2")}
+
+:root{
+  --color-bg-primary:#F3F4EF;
+  --color-bg-secondary:#E8ECE5;
+  --color-surface:#FAFAF7;
+  --color-text-primary:#14211C;
+  --color-text-secondary:#4B5852;
+  --color-line:#D6DCD4;
+  --color-line-strong:#7A857F;
+  --color-accent:#1C6B5A;
+  --color-accent-hover:#155446;
+  --color-accent-soft:#D5EADF;
+  --color-mint:#A8D8C3;
+  --color-sage:#9DB0A0;
+  --color-forest:#24392F;
+  --color-night:#111A16;
+  --color-on-dark:#EEF1EC;
+  --color-on-dark-muted:#A9B5AE;
+  --color-mint-on-dark:#7CC7AE;
+  --color-success:#3E6B45;
+  --color-success-soft:#DDE9DC;
+  --color-error:#A2473A;
+  --color-error-soft:#F2DFDA;
+  --color-warning:#7D5A1C;
+  --color-warning-soft:#F1E7D2;
+  --gradient-soft:linear-gradient(160deg,#E8ECE5 0%,#D5EADF 100%);
+
+  --font-display:"Literata",Georgia,"Times New Roman",serif;
+  --font-text:"Onest",system-ui,-apple-system,"Segoe UI",Helvetica,sans-serif;
+  --weight-display:600; --weight-regular:400; --weight-semibold:600;
+
+  --fs-display-xl:clamp(3rem,7.4vw,7.5rem);
+  --fs-display:clamp(2.5rem,5vw,4.75rem);
+  --fs-h1:clamp(2rem,3.6vw,3.25rem);
+  --fs-h2:clamp(1.625rem,2.6vw,2.375rem);
+  --fs-h3:1.5rem; --fs-h4:1.25rem;
+  --fs-lead:1.3125rem; --fs-body-lg:1.1875rem; --fs-body:1.0625rem; --fs-body-sm:.9375rem;
+  --fs-caption:.8125rem; --fs-eyebrow:.875rem; --fs-button:1rem; --fs-quote:1.625rem; --fs-number:clamp(2.75rem,4.5vw,4rem); --fs-label:.875rem;
+  --lh-tight:1.02; --lh-heading:1.15; --lh-text:1.6; --lh-ui:1.3;
+  --ls-display:-.015em; --ls-heading:-.01em; --ls-text:0; --ls-eyebrow:0;
+
+  --space-3xs:4px; --space-2xs:8px; --space-xs:12px; --space-sm:16px; --space-md:24px; --space-lg:32px;
+  --space-xl:48px; --space-2xl:64px; --space-3xl:96px; --space-4xl:144px;
+
+  --radius-sm:6px; --radius-md:10px; --radius-lg:16px; --radius-button:8px; --radius-pill:999px;
+
+  --shadow-subtle:0 1px 2px rgba(20,33,28,.06),0 0 0 1px rgba(20,33,28,.04);
+  --shadow-soft:0 12px 32px -12px rgba(20,33,28,.16),0 2px 6px rgba(20,33,28,.05);
+  --shadow-inset:inset 0 2px 4px rgba(20,33,28,.07),inset 0 0 0 1px rgba(20,33,28,.05);
+  --shadow-float:0 24px 48px -16px rgba(20,33,28,.24),0 4px 12px rgba(20,33,28,.07);
+
+  --container-max:1240px; --container-text:720px; --gutter:24px;
+  --bp-mobile:390px; --bp-tablet:768px; --bp-laptop:1024px; --bp-desktop:1440px;
+  --duration-fast:140ms; --duration-base:240ms; --duration-slow:420ms;
+  --ease-standard:cubic-bezier(.2,.7,.2,1); --ease-out:cubic-bezier(.16,1,.3,1);
+}
