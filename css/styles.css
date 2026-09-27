@@ -311,21 +311,21 @@ section > h2 { font-size: var(--fs-h2); margin-bottom: .7em; }
 .about__text p { color: var(--color-text-secondary); font-size: var(--fs-body-lg); margin-bottom: 1em; }
 .about__text strong { color: var(--color-text-primary); }
 
-/* --- Как работаю: мятная панель + шаги (цветно и читаемо) --- */
+/* --- Как работаю: бирюзовая панель + шаги (насыщенно, читаемо) --- */
 .process {
-  background: var(--color-mint); color: var(--color-text-primary);
+  background: var(--color-accent); color: var(--color-on-dark);
   border-radius: var(--radius-lg);
   margin-top: var(--space-2xl); margin-bottom: var(--space-2xl);
 }
-.process .eyebrow--mint { color: var(--color-accent-hover); }
-.process h2 { color: var(--color-text-primary); font-size: var(--fs-h2); }
+.process .eyebrow--mint { color: var(--color-mint); }
+.process h2 { color: var(--color-on-dark); font-size: var(--fs-h2); }
 .process__head { max-width: 640px; margin-bottom: var(--space-xl); }
-.process__slogan { color: var(--color-forest); font-family: var(--font-display); font-size: var(--fs-h4); margin-top: .6em; }
+.process__slogan { color: var(--color-mint); font-family: var(--font-display); font-size: var(--fs-h4); margin-top: .6em; }
 .steps { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--space-md); grid-template-columns: 1fr; }
-.steps li { border-top: 1px solid rgba(20, 33, 28, .18); padding-top: 16px; }
-.steps b { font-family: var(--font-display); font-size: 1.6rem; color: var(--color-forest); }
-.steps h3 { color: var(--color-text-primary); font-size: var(--fs-h4); margin: 6px 0 4px; }
-.steps p { color: var(--color-text-primary); font-size: var(--fs-body-lg); line-height: 1.55; margin: 0; }
+.steps li { border-top: 1px solid rgba(255, 255, 255, .22); padding-top: 16px; }
+.steps b { font-family: var(--font-display); font-size: 1.6rem; color: var(--color-mint); }
+.steps h3 { color: var(--color-on-dark); font-size: var(--fs-h4); margin: 6px 0 4px; }
+.steps p { color: var(--color-on-dark); font-size: var(--fs-body-lg); line-height: 1.55; margin: 0; }
 
 /* --- Планшет/десктоп --- */
 @media (min-width: 768px) {
