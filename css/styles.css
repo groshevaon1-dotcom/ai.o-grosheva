@@ -128,6 +128,13 @@ section > h2 { font-size: var(--fs-h2); margin-bottom: .7em; }
   width: 44px; height: 44px; margin-bottom: var(--space-sm);
   border-radius: var(--radius-md); background: var(--color-accent-soft); color: var(--color-accent);
 }
+/* цветовое разнообразие иконок «Что умею» */
+.skills__grid .skill-card:nth-child(2) .skill-card__ic { background: var(--color-mint); color: var(--color-forest); }
+.skills__grid .skill-card:nth-child(3) .skill-card__ic { background: var(--color-warning-soft); color: var(--color-warning); }
+.skills__grid .skill-card:nth-child(4) .skill-card__ic { background: var(--color-success-soft); color: var(--color-success); }
+
+/* полноширинные светлые полосы для ритма (Что умею, FAQ) */
+.skills, .faq { position: relative; background: var(--color-bg-secondary); box-shadow: 0 0 0 100vw var(--color-bg-secondary); clip-path: inset(0 -100vw); }
 .skill-card__ic svg { width: 24px; height: 24px; }
 .skill-card__flag {
   position: absolute; top: var(--space-lg); right: var(--space-lg);
